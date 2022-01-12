@@ -33,14 +33,31 @@
 
  <font face = "Verdana" size = "3">
         <body>
-  <div class="topnav">
-          <img src="https://cdn.discordapp.com/attachments/872874594887925874/914488846752808980/art_logo_3d_transparent.png" height="47" width="47" class="artlogo">
-  <a class="active" href="index.html">Koti</a>
-  <a class="" href="pelit.html">Pelit</a>
-  <a class="" href="https://www.youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ/videos">Videot</a>
-  <a class="" href="tyopaikat.html">Työpaikat</a>
-  <a class="" href="https://patreon.com/artelokuvaoy">Patreon</a>
-  <a class="" href="thx.html">Tiimi</a>
+
+    <header>
+      <div id="brand"><a href="/">MyCompany</a></div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </div>
+    </header>
 
 </div>                                                             
 <div style="text-align:center">
@@ -69,21 +86,7 @@
                                                     
          </div>
          
-           
-<script>
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("topnav").style.padding = "30px 10px";
-    document.getElementById("artlogo").style.fontSize = "25px";
-  } else {
-    document.getElementById("topnav").style.padding = "50px 10px";
-    document.getElementById("artlogo").style.fontSize = "35px";
-  }
-}
-</script>
+           <script src="index.js"></script>
         </body>
 </font>
              
