@@ -21,6 +21,7 @@ top: 4px;
   /* Safari */
   position: -webkit-sticky;
   top: 0;
+  padding: 50px 10px;
 }
 
 /* Style the links inside the navigation bar */
