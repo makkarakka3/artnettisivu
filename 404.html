@@ -1,29 +1,836 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
+     <style>
+
+        
+.mutsis {
+position: relative;
+top: 4px;
+  }
+        
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@font-face { 
+  font-family:"sofia-pro";
+  src:url("https://use.typekit.net/af/572508/00000000000000003b9b1a96/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/572508/00000000000000003b9b1a96/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/572508/00000000000000003b9b1a96/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-display:auto;
+  font-style:normal;
+  font-weight:300;
+} 
+@font-face { 
+  font-family:"sofia-pro";
+  src:url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;
+  font-style:normal;
+  font-weight:400;
+} 
+* { 
+    box-sizing: border-box; 
+    box-sizing: border-box;
+    text-align: center;
+
+} 
+
+body { 
+    margin: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px;
+    text-align: center;
+
+} 
+
+body { 
+    height: 100%; 
+    height: 100%; 
+    text-align: center;
+
+} 
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+
+} 
+
+body { 
+    font-size: 100%; 
+    font-family: 'sofia-pro', sans-serif; 
+    font-weight: 300; 
+    color: #15323a; 
+    font-size: 100%; 
+    font-family: sofia-pro, sans-serif; 
+    font-weight: 300; 
+    color: rgb(21, 50, 58);
+    text-align: center;
+
+} 
+
+html { 
+    font-family: sans-serif; 
+    font-family: sans-serif; 
+    text-size-adjust: 100%;
+    text-align: center;
+
+} 
+
+html { 
+    height: 100%; 
+    height: 100%; 
+    text-align: center;
+
+} 
+
+html { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+
+} 
+
+html { 
+    text-size-adjust: none;
+    text-align: center;
+
+} 
+
+footer { 
+    display: block; 
+    display: block;
+     height: -200px;
+    margin-top: 200px;
+    text-align: center;
+
+} 
+
+.global { 
+    position: relative; 
+    width: 100%; 
+    z-index: 1; 
+    overflow: hidden; 
+    padding-left: 100px; 
+    padding-right: 100px; 
+    position: relative; 
+    width: 100%; 
+    z-index: 1; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    padding-left: 100px; 
+    padding-right: 100px;
+    text-align: center;
+
+} 
+
+#globalFooter { 
+    padding-top: 75px; 
+    padding-bottom: 65px; 
+    background-color: #15323a; 
+    color: #fff; 
+    padding-top: 75px; 
+    padding-bottom: 65px; 
+    background-color: rgb(21, 50, 58); 
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+} 
+
+*,:before,:after { 
+    box-sizing: border-box; 
+    box-sizing: border-box;
+    text-align: center;
+
+} 
+
+body :selection { 
+    background: #ff4444; 
+    color: #fff; 
+    background-image: initial; 
+    background-position-x: initial; 
+    background-position-y: initial; 
+    background-size: initial; 
+    background-repeat-x: initial; 
+    background-repeat-y: initial; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: rgb(255, 68, 68); 
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+} 
+
+div { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+
+} 
+
+.global .inner  { 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin-top: 0px; 
+    margin-right: auto; 
+    margin-bottom: 0px; 
+    margin-left: auto;
+    text-align: center;
+
+} 
+
+.row { 
+    width: 100%; 
+    position: relative; 
+    width: 100%; 
+    position: relative;
+    text-align: center;
+
+} 
+
+.spaced { 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    align-content: stretch; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    align-content: stretch;
+    text-align: center;
+
+} 
+
+#globalFooter .legal  { 
+    opacity: .4; 
+    margin-top: 30px; 
+    opacity: 0.4; 
+    margin-top: 30px;
+     text-align: center;
+
+} 
+
+.col { 
+    position: relative; 
+    position: relative;
+    text-align: center;
+
+} 
+
+
+
+
+}     
+
+#globalFooter .col  { 
+    width: 50%; 
+    width: 50%;
+     text-align: center;
+
+} 
+
+#globalFooter .social-links  { 
+text-align: center;
+
+} 
+
+p { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+} 
+
+.global p  { 
+    font: 300 22px/1.82 'sofia-pro', sans-serif; 
+    font-style: normal; 
+    font-variant-caps: normal; 
+    font-variant-ligatures: normal; 
+    font-variant-numeric: normal; 
+    font-variant-east-asian: normal; 
+    font-weight: 300; 
+    font-stretch: normal; 
+    font-size: 22px; 
+    line-height: 1.82; 
+    font-family: sofia-pro, sans-serif;
+    text-align: center;
+
+} 
+
+#globalFooter p  { 
+    font-size: 14px; 
+    line-height: 1.86; 
+    font-size: 14px; 
+    line-height: 1.86;
+    text-align: center;
+
+} 
+
+ul { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+
+} 
+
+a { 
+    background-color: transparent; 
+    background-color: transparent;
+    text-align: center;
+
+} 
+
+a { 
+    text-decoration: none; 
+    text-decoration-line: none; 
+    text-decoration-thickness: initial; 
+    text-decoration-style: initial; 
+    text-decoration-color: initial;
+     text-align: center;
+
+} 
+
+
+  } 
+}     
+
+#globalFooter a  { 
+    color: #fff; 
+    color: rgb(255, 255, 255);
+    style="text-align: center"
+
+} 
+
+#globalFooter a:after  { 
+    background-color: #fff; 
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+} 
+
+a:active,a:hover { 
+    outline: 0; 
+    outline-color: initial; 
+    outline-style: initial; 
+    outline-width: 0px;
+    text-align: center;
+
+} 
+
+
+
+
+}     
+
+span { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px; 
+    border-left-width: 0px; 
+    border-top-style: initial; 
+    border-right-style: initial; 
+    border-bottom-style: initial; 
+    border-left-style: initial; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial;
+    text-align: center;
+
+} 
+
+.vline-div { 
+    padding: 0 5px; 
+    padding-top: 0px; 
+    padding-right: 5px; 
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    text-align: center;
+
+} 
+
+#globalFooter .vline-div  { 
+    padding: 0 10px; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    text-align: center;
+} 
+
+#globalFooter .social-links li  { 
+    display: inline-block; 
+    vertical-align: middle; 
+    font-size: 14px; 
+    display: inline-block; 
+    vertical-align: middle; 
+    font-size: 14px;
+    text-align: center;
+
+} 
+
+#globalFooter .social-links li ~ li  { 
+    margin-left: 22px; 
+    margin-left: 22px;
+    text-align: center;
+
+} 
+
+a.uline { 
+    color: #ff4444; 
+    position: relative; 
+    color: rgb(255, 68, 68); 
+    position: relative;
+    text-align: center
+
+} 
+
+@media screen and (min-width: 1025px){ 
+  .uline:after { 
+    transition: all 0.3s cubic-bezier(0.5, 0, 0.5, 1); 
+    transition-duration: 0.3s; 
+    transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1); 
+    transition-delay: 0s; 
+    transition-property: all;
+    text-align: center;
+
+  } 
+}     
+
+a.uline:after { 
+    content: ''; 
+    position: absolute; 
+    left: 0px; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 1px; 
+    background-color: #ff4444; 
+    content: ""; 
+    position: absolute; 
+    left: 0px; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 1px; 
+    background-color: rgb(255, 68, 68);
+    text-align: center;
+
+} 
+
+
+  } 
+}     
+
+  } 
+}     
+
+
+          
+        
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+     display:flex; 
+  flex-direction:column;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 250px;
+  width: 100%;
+ background-color: #555555;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+          .button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 25px;
+  margin: 4px 2px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 250px;
+          }
+          .button:hover {opacity: 1}
+     </style>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>404 - Tiedostoa tai kansiota ei löydy.</title>
-<style type="text/css">
-<!--
-body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
-fieldset{padding:0 15px 10px 15px;} 
-h1{font-size:2.4em;margin:0;color:#FFF;}
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
-#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
-background-color:#555555;}
-#content{margin:0 0 0 2%;position:relative;}
-.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
--->
-</style>
-</head>
-<body>
-<div id="header"><h1>Server Error</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>404 - File or directory not found.</h2>
-  <h3>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</h3>
- </fieldset></div>
-</div>
-</body>
-</html>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1943627694005932"
+     crossorigin="anonymous"></script>
+<script async src="https://arc.io/widget.min.js#baw65tLy"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1943627694005932"
+     crossorigin="anonymous"></script>
+
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+
+        <title>Art Elokuva OY</title>
+
+  </head>
+
+ <font face = "Verdana" size = "3">
+        <body>
+
+    <header>
+      <div id="brand"> <img src="https://cdn.discordapp.com/attachments/669919129893077032/739885499849637958/butiful_logo.png" alt="lohi" width="50" height="25"><a href="/">Art Elokuva OY</a></div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Koti</a></li>
+          <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+          <li><a href="pelit.html">Pelit</a></li>
+          <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+          <li><a href="thx.html">Tiimi</a></li>
+          <li><a href="tyopaikat.html">Työpaikat</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+
+<li><a href="index.html">Koti</a></li>
+          <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+          <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+          <li><a href="thx.html">Tiimi</a></li>
+          <li><a href="tyopaikat.html">Työpaikat</a></li>
+
+        </ul>
+      </div>
+    </header>
+
+</div>                                                             
+<div style="text-align:center">
+<br>
+<br>
+        <h1 style="text-align:center";"font-family:arial">Virhe 404</h1>
+        <br>
+         <h3 style="text-align:center";">Tietoja</h3>
+         <p style="text-align:center";">Annettua nettisivua tai tiedostoa ei löytynyt</p>
+         <br>
+                                                                          
+         </div>
+         
+           <script src="index.js"></script>
+             <footer id="globalFooter" class="global snipcss-cBw39">
+          pls tilaa kanava
+          <br>
+          <a style="text-align: center">
+            support@artelokuvaoy.com
+          </a>
+          <span class="vline-div dsk snip-span">
+ 
+          </span>
+          <br>
+        </p>
+      </div>
+      <div class="col social-links snip-div">
+        <ul class="snip-ul">
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal snip-div">
+      <p class="snip-p" style="text-align: center">
+        Copyright 2022 Art Elokuva OY · Nettisivun tehnyt Tatuunius
+      </p>
+    </div>
+  </div>
+</footer>
+
+             
+             
+
+        </body>
+</font>
+             
+  </html>
