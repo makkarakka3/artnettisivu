@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <style>
-    div {
+    .warningBox {
     background-color: rgb(61, 61, 61);
-    width: 300px;
+    width: 100%;
+    height: 100%;
     padding: 50px;
-     margin: 20px;
-     text-align:center }
+    margin: 20px;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+    p.warningBoxText {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
 
      body {
   font-family: Verdana, sans-serif;
@@ -19,26 +33,30 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="toggleCloudRedirectAlert()" class="jspopup">toimiiko?</button>
+    <button onclick="toggleWarningBox()" class="jspopup">toimiiko?</button>
 
-    <div class="warningBox">
-        <p style="color:white">
+    <div class="warningBox" id="warningBox" style="display: none";>
+        <p class="warningBoxText" style="color:white">
             Tämä uudelleenohjaa sinut cloud.artelokuvaoy.com:iin!
             Jos et ole töissä Art Elokuva OY:llä sinulla ei ole käyttäjää tälle sivulle.
-            Jos olet töissä Art Elokuva OY:llä ja halua käyttäjän, ota yhteys tatuun.
+            Jos olet töissä Art Elokuva OY:llä ja haluat käyttäjän, ota yhteys tatuun.
             Haluatko jatkaa? 
         </p>
+        
+        
 
     </div>
 </body>
 
 <script>
-    function toggleCloudRedirectAlert() {
-        if (confirm("Tämä uudelleenohjaa sinut cloud.artelokuvaoy.com:iin!\nJos et ole töissä Art Elokuva OY:llä sinulla ei ole käyttäjää tälle sivulle.\nJos olet töissä Art Elokuva OY:llä ja halua käyttäjän, ota yhteys tatuun.\nHaluatko jatkaa?")) {
-            location.replace("https://cloud.artelokuvaoy.com")
-    } else {
-        void(0)
+    function toggleWarningBox() {
+        var cont = document.getElementById('warningBox');
+        if (cont.style.display == 'block') {
+            cont.style.display = 'none';
+        }
+        else {
+            cont.style.display = 'block';
+        }
     }
-}
 </script>
 </html>
