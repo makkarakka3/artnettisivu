@@ -31,7 +31,7 @@
           <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
           <li><a href="thx.html">Tiimi</a></li>
           <li><a href="tyopaikat.html">Työpaikat</a></li>
-          <li id="login"><a href="#" onclick="toggleCloudAlert(); ">Kirjaudu</a></li>
+          <li id="login"><a href="#" onclick="toggleWarningBox(); ">Kirjaudu</a></li>
         </ul>
       </nav>
       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -45,13 +45,26 @@
           <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
           <li><a href="thx.html">Tiimi</a></li>
           <li><a href="tyopaikat.html">Työpaikat</a></li>
-          <li id="login"><a href="#" onclick="toggleCloudAlert(); ">Kirjaudu</a></li>
+          <li id="login"><a href="#" onclick="toggleWarningBox(); ">Kirjaudu</a></li>
 
         </ul>
       </div>
     </header>
 
-</div>                                                             
+</div>
+<!--siisti warning kun painat kirjaudu!-->
+<div class="warningBox" id="warningBox" style="display: none";>
+  <p class="warningBoxText" style="color:white">
+      Tämä uudelleenohjaa sinut cloud.artelokuvaoy.com:iin!
+      Jos et ole töissä Art Elokuva OY:llä sinulla ei ole käyttäjää tälle sivulle.
+      Jos olet töissä Art Elokuva OY:llä ja haluat käyttäjän, ota yhteys tatuun.
+      Haluatko jatkaa? 
+  </p>
+  <button id="cancon" onclick="location.href='cloud.artelokuvaoy.com'">Jatka</a></li>
+  <br>
+  <button id="cancon" onclick="toggleCancel(); ">Peru</a></li>
+  </div>
+
 <div style="text-align:center">
 <br>
 <br>

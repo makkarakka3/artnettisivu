@@ -9,3 +9,20 @@ function toggleMobileMenu(menu) {
         void(0)
     }
 }
+
+function toggleWarningBox() {
+    var cont = document.getElementById('warningBox');
+    if (cont.style.display == 'block') {
+        cont.style.display = 'none';
+    }
+    else {
+        cont.style.display = 'block';
+    }
+}
+function toggleCancel() {
+    var cont = document.getElementById('warningBox');
+    if (cont.style.display == 'block') {
+        cont.style.display = 'none';
+
+}
+}
