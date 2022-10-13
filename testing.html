@@ -26,6 +26,13 @@
      body {
   font-family: Verdana, sans-serif;
 }
+button.cancelorcontinue {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +49,9 @@
             Jos olet töissä Art Elokuva OY:llä ja haluat käyttäjän, ota yhteys tatuun.
             Haluatko jatkaa? 
         </p>
-        
+        <button id="cancelorcontinue" onclick="location.href='cloud.artelokuvaoy.com'">Jatka</a></li>
+        <br>
+        <button id="cancelorcontinue" onclick="toggleCancel(); ">Peru</a></li>
         
 
     </div>
@@ -58,5 +67,12 @@
             cont.style.display = 'block';
         }
     }
+    function toggleCancel() {
+        var cont = document.getElementById('warningBox');
+        if (cont.style.display == 'block') {
+            cont.style.display = 'none';
+
+    }
+}
 </script>
 </html>
