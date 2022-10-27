@@ -273,8 +273,14 @@ footer i{
 footer p {
   opacity: 0.5;
 }
-  @media only screen and (max-width: 1920px) {
+  @media only screen and (min-width: 1920px) {
 .miksi {
   margin-top: 550px;
+}
+}
+
+  @media only screen and (max-width: 479px) {
+.miksi {
+  margin-top: 400px;
 }
 }
