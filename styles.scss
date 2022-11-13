@@ -285,3 +285,59 @@ footer p {
   margin-top: 350px;
 }
 }
+
+
+
+.alert {
+  &:before {
+    content: " ";
+    display: block;
+    height: 0;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  span {
+    color: #fff;
+    background: red;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.7;
+    transform: translateY(-100%); 
+    transition: 0.25s ease;
+    z-index: 999;
+  }
+  &.active {
+    &:before {
+      height: 32px;
+    }
+    span {
+      transform: translateY(0%);
+      &:hover {
+        padding: 10px 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px){
+  header {
+    margin-top: 30px;
+    
+  }
+}
+
+@media screen and (max-width: 769px){
+  .mobile-menu {
+    margin-top: 30px;
+    
+  }
+  
+    header {
+    margin-top: 30px;
+    
+  }
+}
