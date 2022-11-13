@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <style>
 </style>
@@ -10,8 +11,11 @@
 <title>Art Elokuva OY</title>
 </head>
 <header>
+  
+  
   <div id="brand"> <img src="https://cdn.discordapp.com/attachments/669919129893077032/739885499849637958/butiful_logo.png" alt="lohi" width="40" height="40"><a href="/">Art Elokuva OY</a></div>
       
+  
   <nav>
     <ul>
       <li><a href="index.html">Koti</a></li>
@@ -38,11 +42,16 @@
 
     </ul>
   </div>
+  
+  
 
  </header>
 
 <body>
-  
+  <div class="alert">
+  <span>this is an alert</span>
+</div>
+
   <br>
   <div class="homecenter" id="homecenter">
     <h1>Art Elokuva OY</h1>
@@ -66,6 +75,18 @@
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
+      
+      $(document).ready(function() {
+  setTimeout(function() {
+    $('.alert').addClass('active');
+  }, 2000);
+
+  $('.close').click(function() {
+    $('.alert').removeClass('active');
+  });
+});
+
+
 
     </script>
 <footer>
