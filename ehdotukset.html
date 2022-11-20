@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<style>
+</style>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/1e017f19a0.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://artelokuvaoy.com/styles.css">
+<title>Art Elokuva OY</title>
+</head>
+<header>
+  
+  
+  <div id="brand"> <img src="https://cdn.discordapp.com/attachments/669919129893077032/739885499849637958/butiful_logo.png" alt="lohi" width="40" height="40"><a href="/">Art Elokuva OY</a></div>
+      
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+
+
+    </ul>
+  </div>
+  
+  
+
+ </header>
+
+<body>
+
+
+    <script>
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+      
+      $(document).ready(function() {
+  setTimeout(function() {
+    $('.alert').addClass('active');
+  }, 2000);
+
+  $('.close').click(function() {
+    $('.alert').removeClass('active');
+  });
+});
+
+
+
+    </script>
+<footer>
+<div id="footer-links">
+  <a href="https://www.youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ"><i class="fa-2x fa-brands fa-youtube"></i></a>
+  <a href="https://github.com/makkarakka3/artnettisivu"><i class="fa-2x fa-brands fa-github"></i></i></a>
+
+  </div>
+  <div id="legal">
+    <p>© 2022 Art Elokuva OY. Art Elokuva OY ei ole rekisteröity tavaramerkki Suomessa. Nettisivun tehnyt Tatu. </p>
+
+  </div>
+</footer>
+</body>
+
+</html>
