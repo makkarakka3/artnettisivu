@@ -180,6 +180,7 @@ p{
 	margin: auto 0;
 	display: none;
 	cursor: pointer;
+  z-index: 999;
   }
   
   #hamburger-icon div {
@@ -188,6 +189,7 @@ p{
 	background-color: white;
 	margin: 6px 0;
 	transition: 0.4s;
+  z-index: 999;
   }
   
   .open .bar1 {
