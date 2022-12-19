@@ -78,12 +78,30 @@ p{
   right: 0;
 }
 
+@media only screen and (min-width: 760px) {
+
 .homecenter {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+}
+
+@media only screen and (max-width: 760px) {
+
+  .homecenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: min-content;
+  }
+
 }
 
 .warning {
