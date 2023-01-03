@@ -27,6 +27,12 @@ p{
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 } 
+
+small{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+} 
 .menudiv {
 	font-family: 'Ubuntu', sans-serif;
 	left: 0;
@@ -238,8 +244,8 @@ p{
 	left: 0;
 	height: 350px;
 	width: 100%;
-        background-color: #1a1a1a;
-        z-index: 999;
+  background-color: #1a1a1a;
+  z-index: 999;
 
   }
   
@@ -284,6 +290,7 @@ footer {
   text-align: center;
   list-style-type: none;
   text-align: center;
+  opacity: 0.5;
 }
 
 footer i{
@@ -292,7 +299,7 @@ footer i{
 }
 
 footer p {
-  opacity: 0.5;
+
 }
   @media only screen and (min-width: 1920px) {
 .miksi {
