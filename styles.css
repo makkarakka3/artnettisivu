@@ -158,6 +158,10 @@ small{
   #brand a {
 	color: #09c372;
   }
+
+  #brand img {
+        margin-left: 10px;
+  }
   
   ul {
 	list-style: none;
