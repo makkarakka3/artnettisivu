@@ -284,9 +284,10 @@ small{
     text-align: center;
 }
 
+
 footer {
   position: absolute;
-  top: 130vh;
+  top: 100vh;
   bottom: 0;
   left: 0;
   right: 0;
