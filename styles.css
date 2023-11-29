@@ -345,3 +345,8 @@ footer p {
 }
 
 
+.warnbox {
+  width: 100vw;
+  height: 250px;
+  background-color: #f44336;
+}
