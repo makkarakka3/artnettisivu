@@ -353,7 +353,7 @@ footer p {
 
 @media only screen and (max-width: 479px) {
 .warnico {
-  left: 43;
+  left: 43vw;
   bottom: 300px;
 }
 }
