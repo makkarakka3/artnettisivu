@@ -350,3 +350,10 @@ footer p {
   height: 250px;
   background-color: #f44336;
 }
+
+@media only screen and (max-width: 479px) {
+.warnico {
+  left: 43;
+  bottom: 300px;
+}
+}
