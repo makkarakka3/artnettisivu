@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML>
+<style>
+  @media only screen and (max-width: 900px) {
+
+footer {
+  margin-top: 50px;
+  
+}
+
+}
+</style>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/1e017f19a0.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="https://artelokuvaoy.com/favicon.ico">
+<title>Art Elokuva OY - Virhe</title>
+</head>
+
+<header>
+  
+  
+  
+  
+  <div id="brand"> <img src="https://artelokuvaoy.com/logo.gif" alt="lohi" width="45" height="45"><a href="/">Art Elokuva OY</a></div>
+      
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+      <li><a href="credits.html">Tiimi</a></li>
+      <li><a href="contact.html">Ota yhteyttä</a></li>
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+      <li><a href="credits.html">Tiimi</a></li>
+      <li><a href="contact.html">Ota yhteyttä</a></li>
+
+
+    </ul>
+  </div>
+  
+  
+
+ </header>
+ 
+
+<body>
+
+
+  <br>
+  <div class="homecenter" id="homecenter">
+    <div class="warnbox">
+    <h3 style="text-align: center; padding-top: 170px;">Virhe 404, sivua ei löydy.</h3>
+    <p style="text-align: center; padding-top: 0px;"><a href="index.html" style="color:white">Palaa kotiin</a> tai <a href="contact.html" style="color:white">ota meihin yhteyttä</a></p>
+    <div class="warnico">
+    <img src="warning-28-256.gif" style="width: 150px; position:relative; left: 46vw; bottom: 200px;">
+    </div>
+    </div>
+    </div>
+
+    <script>
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+      
+      $(document).ready(function() {
+  setTimeout(function() {
+    $('.alert').addClass('active');
+  }, 2000);
+
+  $('.close').click(function() {
+    $('.alert').removeClass('active');
+  });
+});
+
+
+
+    </script>
+<footer>
+<div id="footer-links">
+  <a href="https://www.youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ"><i class="fa-2x fa-brands fa-youtube"></i></a>
+  <a href="https://github.com/makkarakka3/artnettisivu"><i class="fa-2x fa-brands fa-github"></i></i></a>
+
+  </div>
+  <div id="legal">
+    <p>support@artelokuvaoy.com</p>
+    <p>© 2023 Art Elokuva OY</p>
+    <p>Art Elokuva OY ei ole aito osakeyhtiö, eikä rekisteröity tavaramerkki Suomessa.</p>
+    <div id="hyperlinks">
+      <a href="cookies.html"><small>Evästelinjaus</small></a>
+    </div>
+
+  </div>
+</footer>
+</body>
+
+</html>
