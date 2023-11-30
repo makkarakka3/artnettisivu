@@ -351,9 +351,11 @@ footer p {
   background-color: #f44336;
 }
 
-@media only screen and (max-width: 479px) {
+
 .warnico {
-  left: 43vw;
-  bottom: 300px;
-}
+  position: absolute;
+  left: 3.5%;
+  top: 115%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
