@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<style>
+
+@media only screen and (max-width: 760px) {
+
+  footer {
+    margin-top: 100px;
+
+  }
+
+}
+
+.errornotice {
+  padding: 100px;
+  background-color: #f44336;
+  color: white;
+  }
+.maintenancenotice {
+  padding: 100px;
+  background-color: #3782fa;
+  color: white;
+}
+.goodnotice {
+  padding: 100px;
+  background-color: #65ff65c9;
+  color: white;
+}
+</style>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/1e017f19a0.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://artelokuvaoy.com/styles.css">
+<title>Art Elokuva OY</title>
+</head>
+
+<header>
+
+
+    <div id="brand"> <img src="https://artelokuvaoy.com/logo.gif" alt="lohi" width="45" height="45"><a href="/">Art Elokuva OY</a></div>
+
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+      <li><a href="credits.html">Tiimi</a></li>
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+
+      <li><a href="index.html">Koti</a></li>
+      <li><a href="https://youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ">Videot</a></li>
+      <li><a href="pelit.html">Pelit</a></li>
+      <li><a href="https://patreon.com/artelokuvaoy">Patreon</a></li>
+      <li><a href="tyopaikat.html">Työpaikat</a></li>
+      <li><a href="ehdotukset.html">Ehdotukset</a></li>
+      <li><a href="credits.html">Tiimi</a></li>
+
+
+    </ul>
+  </div>
+
+ </header>
+
+ <div class="errornotice" id="errornotice">
+  <h3 style="text-align: left;bottom: 20px">Merkittävä ongelma</h3>
+  <span id="message-span-status-er"></span>
+</div>
+ <div class="maintenancenotice" id="maintenancenotice">
+  <h3 style="text-align: left;bottom: 20px">Huoltokatko</h3>
+  <span id="message-span-status-ma"></span>
+</div>
+ <div class="goodnotice" id="goodnotice">
+  <h3 style="text-align: left;bottom: 20px">Kaikki OK</h3>
+  <span id="message-span-status-ok"></span>
+</div>
+
+<body>
+<script>
+fetch('https://artelokuvaoy.com/status/statustext.txt')
+  .then(res => res.text())
+  .then((textResponse) => {
+  console.log(textResponse);
+    if (textResponse.includes("Merkittävä")) {
+    console.log("Issue detected as major");
+    document.querySelector('#message-span-status-er').textContent = textResponse;
+    document.getElementById("goodnotice").style.display= "none";
+    document.getElementById("maintenancenotice").style.display= "none";
+}
+    if (textResponse.includes("Huolto")) {
+    console.log("Issue detected as maintenance");
+    document.querySelector('#message-span-status-ma').textContent = textResponse;
+    document.getElementById("goodnotice").style.display= "none";
+    document.getElementById("errornotice").style.display= "none";
+}
+    if (textResponse.includes("","Kaikki")) {
+    console.log("Issue detected as all ok");
+    document.querySelector('#message-span-status-ok').textContent = textResponse;
+    document.getElementById("maintenancenotice").style.display= "none";
+    document.getElementById("errornotice").style.display= "none";
+    }
+  });
+
+
+
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+
+      $(document).ready(function() {
+  setTimeout(function() {
+    $('.alert').addClass('active');
+  }, 2000);
+
+  $('.close').click(function() {
+    $('.alert').removeClass('active');
+  });
+});
+
+
+
+    </script>
+<footer>
+<div id="footer-links">
+  <a href="https://www.youtube.com/channel/UC_4SOL8f-NygQWdw6-_DclQ"><i class="fa-2x fa-brands fa-youtube"></i></a>
+  <a href="https://github.com/makkarakka3/artnettisivu"><i class="fa-2x fa-brands fa-github"></i></i></a>
+
+  </div>
+  <div id="legal">
+    <p>support@artelokuvaoy.com</p>
+    <p>© 2024 Art Elokuva OY</p>
+    <p>Art Elokuva OY ei ole aito osakeyhtiö, eikä rekisteröity tavaramerkki Suomessa.</p>
+</footer>
+</body>
+
+</html>
