@@ -58,6 +58,7 @@ small{
   font-size: 28px;
   padding: 20px;
   width: 230px;
+  transition-delay: 250ms;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -349,9 +350,22 @@ footer i{
   height: 250px;
   background-color: #f44336;
 }
+.infobox {
+  width: 100vw;
+  height: 250px;
+  background-color: #3936f4;
+}
 
 
 .warnico {
+  position: absolute;
+  left: 4%;
+  top: 115%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.infoico {
   position: absolute;
   left: 4%;
   top: 115%;
