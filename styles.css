@@ -323,11 +323,15 @@ footer i{
 
 
 .alert {
-  padding: 15px;
-  background-color: #f44336;
+  padding: 10px;
+  background-color: #c50b0b;
   color: white;
-  text-align: center;
 }
+
+    #message-span {
+    margin-left: 15px;
+    font-size: large;
+    }
 
 .closebtn {
   margin-left: 15px;
