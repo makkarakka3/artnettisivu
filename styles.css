@@ -333,6 +333,16 @@ footer i{
   font-size: large;
 }
 
+
+@media only screen and (max-width: 900px) {
+
+  #message-span {
+    margin-left: 15px;
+    font-size: medium;
+  }
+
+}
+
 .closebtn {
   margin-left: 15px;
   color: white;
