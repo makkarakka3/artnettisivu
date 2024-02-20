@@ -326,12 +326,13 @@ footer i{
   padding: 10px;
   background-color: #c50b0b;
   color: white;
+  margin-bottom: 10px;
 }
 
-    #message-span {
-    margin-left: 15px;
-    font-size: large;
-    }
+#message-span {
+  margin-left: 15px;
+  font-size: large;
+}
 
 .closebtn {
   margin-left: 15px;

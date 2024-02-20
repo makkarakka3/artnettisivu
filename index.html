@@ -66,15 +66,19 @@ footer {
 
  </header>
 
- <div class="alert" id="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <span id="message-span" style="text-align: center"></span>
-</div>
+
+
 
 <body>
 
+  
+
 
   <br>
+  <div class="alert" id="alert">
+    <span class="closebtn" onclick="closeButton(this)">&times;</span>
+    <span id="message-span" style="text-align: center"></span>
+  </div>
   <div class="homecenter" id="homecenter">
     <br>
     <br>
@@ -97,7 +101,7 @@ fetch('https://testi.artelokuvaoy.com/banneritestiteksti.txt')
   .then(res => res.text())
   .then((textResponse) => {
   console.log(textResponse);
-    document.getElementById('homecenter').style.marginTop= "40px";
+    document.getElementById("homecenter").style.marginTop= "30px";
     document.querySelector('#message-span').textContent = textResponse;
     if (textResponse.includes("empty")) {
     console.log("textResponse empty");
@@ -105,7 +109,12 @@ fetch('https://testi.artelokuvaoy.com/banneritestiteksti.txt')
     }
   });
 
+  function closeButton() {
+  document.getElementById("alert").style.display='none';
+  document.getElementById("homecenter").style.marginTop= "0px";
+  
 
+}
 
       
 function toggleMobileMenu(menu) {
