@@ -86,6 +86,20 @@ footer {
     </div>
 
     <script>
+fetch('https://testi.artelokuvaoy.com/banneritestiteksti.txt')
+  .then(res => res.text())
+  .then((textResponse) => {
+  console.log(textResponse);
+    document.querySelector('#message-span').textContent = textResponse;
+    if (textResponse.includes("empty")) {
+    console.log("textResponse empty");
+    document.getElementById("alert").style.display= "none";
+    }
+  });
+
+
+
+      
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
