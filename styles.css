@@ -320,45 +320,6 @@ footer i{
 }
 }
 
-
-
-.alert {
-  padding: 10px;
-  background-color: #c50b0b;
-  color: white;
-}
-
-#message-span {
-  margin-left: 15px;
-  font-size: large;
-}
-
-
-@media only screen and (max-width: 900px) {
-
-  #message-span {
-    margin-left: 15px;
-    font-size: medium;
-  }
-
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
-
 .warnbox {
   width: 100vw;
   height: 250px;

@@ -65,11 +65,6 @@ footer {
 
  </header>
 
- <div class="alert" id="alert">
-  <span class="closebtn" onclick="closeButton(this)">&times;</span>
-  <span id="message-span" style="text-align: center"></span>
-</div>
-
 
 
 <body>
@@ -97,25 +92,6 @@ footer {
     </div>
 
     <script>
-fetch('https://testi.artelokuvaoy.com/banneritestiteksti.txt')
-  .then(res => res.text())
-  .then((textResponse) => {
-  console.log(textResponse);
-    document.getElementById("homecenter").style.marginTop= "55px";
-    document.querySelector('#message-span').textContent = textResponse;
-    if (textResponse.includes("empty")) {
-    console.log("textResponse empty");
-    document.getElementById("alert").style.display= "none";
-    document.getElementById("homecenter").style.marginTop= "0px";
-    }
-  });
-
-  function closeButton() {
-  document.getElementById("alert").style.display='none';
-  document.getElementById("homecenter").style.marginTop= "0px";
-  
-
-}
 
       
 function toggleMobileMenu(menu) {
