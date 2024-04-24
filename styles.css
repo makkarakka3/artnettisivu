@@ -5,7 +5,7 @@ html {
 }
 
 body { 
-background-color: #0b0c17;
+background-color: #0e0f17;
 overflow-x: hidden; /* piilottaa sivuttain skrollauksen */
 }
 h1{
@@ -143,7 +143,7 @@ small{
   
   header {
 	padding: 0 20px;
-	background-color: #1a1a1a;
+	background-color: #0e0f17;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
