@@ -325,6 +325,11 @@ footer i{
   height: 250px;
   background-color: #f44336;
 }
+.warnbox2 {
+  width: 100vw;
+  height: 60px;
+  background-color: #f44336;
+}
 .infobox {
   width: 100vw;
   height: 250px;
